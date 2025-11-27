@@ -2,4 +2,4 @@
 dataset/.ssh
  
 # Ignore YOLO prediction folders
-runs/predict*/
+runs/predict/
