@@ -9,7 +9,7 @@ import open3d as o3d  # for  point cloud visualization
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # load YOLO model
-model_path = os.path.join(SCRIPT_DIR, "../runs/detect/vegetable_train/exp2/weights/best.pt")
+model_path = os.path.join(SCRIPT_DIR, "../runs/detect/vegetable_train/exp_final/weights/best.pt")
 model = YOLO(model_path)
 
 # Configure RealSense
@@ -57,11 +57,7 @@ class_colors = {
     'carrot': (255, 128, 0)  # orange
 }
 
-# --- Open3D Visualizer setup ---
-vis = o3d.visualization.Visualizer()
-vis.create_window(window_name="Point Cloud", width=640, height=480)
-pcd_combined = o3d.geometry.PointCloud()
-vis.add_geometry(pcd_combined)
+
 
 # Detection start
 try:
@@ -81,81 +77,61 @@ try:
         points_list = []
         colors_list = []
 
-        for box in results[0].boxes:
-            # Bounding box
-            x1, y1, x2, y2 = map(int, box.xyxy[0])
-            cls_id = int(box.cls[0])
-            cls_name = model.names[cls_id]
+        if results[0].boxes is not None and len(results[0].boxes) > 0:
 
-            # Color for this class
-            color = class_colors.get(cls_name, (255, 255, 0))  # default cyan
+            for box in results[0].boxes:
+                # Bounding box
+                x1, y1, x2, y2 = map(int, box.xyxy[0])
+                cls_id = int(box.cls[0])
+                cls_name = model.names[cls_id]
 
-            # Depth at center of bounding box
-            cx = (x1 + x2) // 2
-            cy = (y1 + y2) // 2
-            depth = depth_image[cy, cx] * depth_scale  # meters
+                # Color for this class
+                color = class_colors.get(cls_name, (255, 255, 0))  # default cyan
 
-            # Draw box and text
-            cv2.rectangle(color_image, (x1, y1), (x2, y2), color, 2)
-            cv2.putText(color_image, f"{cls_name} {depth:.3f}m", (x1, y1-10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
-            
-            # Convert bounding box region of interest to point cloud
-            h, w = depth_image.shape
-            x1, x2 = max(0, x1), min(w, x2)
-            y1, y2 = max(0, y1), min(h, y2)
+                # Depth at center of bounding box
+                cx = (x1 + x2) // 2
+                cy = (y1 + y2) // 2
+                z = depth_image[cy, cx] * depth_scale  # meters
 
-            # print(f"Clipped bbox: {x1}, {y1}, {x2}, {y2}")
+                # Draw box and text
+                cv2.rectangle(color_image, (x1, y1), (x2, y2), color, 2)
+                cv2.putText(color_image, f"{cls_name} {z:.3f}m", (x1, y1-10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
+                
 
-            depth_roi = depth_image[y1:y2, x1:x2]
-            color_roi = color_image[y1:y2, x1:x2]
-            
-            valid_points = np.count_nonzero(depth_roi)
+                # Depth roi 
+                depth_roi = depth_image[y1:y2, x1:x2]  # depth values inside bounding box
 
-            # print("Depth ROI shape:", depth_roi.shape)
-            print(f"Valid depth points in ROI: {valid_points}")
+                # Only consider pixels with depth > 0
+                valid_mask = depth_roi > 0
+                z = depth_roi[valid_mask] * depth_scale  # convert to meters
 
+                # Get pixel coordinates for valid points
+                u_coords, v_coords = np.where(valid_mask)
 
-            """
-            To create a point cloud for a detected object, the 3D images can be computed by
-                - X = (u - cx) * depth * depth_scale / fx
-                - X = (v - cy) * depth * depth_scale / fy
-                - Z = depth * depth_scale
-            """
+                """
+                To create a point cloud for a detected object, the 3D images can be computed by
+                    - X = (u - cx) * depth * depth_scale / fx
+                    - X = (v - cy) * depth * depth_scale / fy
+                    - Z = depth * depth_scale
+                """
 
-            u, v = np.meshgrid(np.arange(depth_roi.shape[1]), np.arange(depth_roi.shape[0]))
-            z = depth_roi * depth_scale
-            valid = z > 0
-            u = u[valid]
-            v = v[valid]
-            z = z[valid]
-            x = (u + x1 - px) * z / fx
-            y = (v + y1 - py) * z / fy
-            # points: (N,3)
-            points = np.stack((x, y, z), axis=-1)
+                # Convert to 3D
+                X = (u_coords + x1 - px) * z / fx
+                Y = (v_coords + y1 - py) * z / fy
+                points_3d = np.stack((X, Y, z), axis=-1)  # shape: (N,3)
 
-            # Correctly extract colors for valid points
-            colors = color_roi[valid]  # shape (N,3)
-            colors = colors[:, ::-1] / 255.0  # BGR -> RGB
+                
 
-            if points.shape[0] > 0:
-                points_list.append(points)
-                colors_list.append(colors)
+                if points_3d.shape[0] > 0:
+                    min_bound = points_3d.min(axis=0)  # minimum X, Y, Z
+                    max_bound = points_3d.max(axis=0)  # maximum X, Y, Z
+                    dimensions = max_bound - min_bound  # width (X), height (Y), depth (Z)
+                    print(f"Class: {cls_name}, dimensions (meters): {dimensions}")
+                
 
-        # Merge all points for visualization
-        if points_list:
-            all_points = np.vstack(points_list)
-            all_colors = np.vstack(colors_list)
-            pcd_combined.points = o3d.utility.Vector3dVector(all_points)
-            pcd_combined.colors = o3d.utility.Vector3dVector(all_colors)
-
-            # Update Open3D visualizer non-blocking
-            vis.update_geometry(pcd_combined)
-            vis.poll_events()
-            vis.update_renderer()
-
-        cv2.waitKey(1)
-
+            else:
+                print("No object detected")
 
         # Display
         cv2.imshow("Image detection", color_image)

@@ -1,1 +1,5 @@
+# Ignore the ssh keys from the dataset
 dataset/.ssh
+ 
+# Ignore YOLO prediction folders
+runs/predict*/
