@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 3
+names: ['carrot', 'potato', 'tomato']
+
+roboflow:
+  workspace: vegetable_detection-asepb
+  project: ovosh-zyslv
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/vegetabledetection-asepb/ovosh-zyslv/dataset/1
