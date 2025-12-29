@@ -1,0 +1,145 @@
+[0.000000] (-) TimerEvent: {}
+[0.005516] (realsense_gazebo_plugin) JobQueued: {'identifier': 'realsense_gazebo_plugin', 'dependencies': OrderedDict()}
+[0.005650] (realsense_gazebo_plugin) JobStarted: {'identifier': 'realsense_gazebo_plugin'}
+[0.011411] (realsense_gazebo_plugin) JobProgress: {'identifier': 'realsense_gazebo_plugin', 'progress': 'cmake'}
+[0.011617] (realsense_gazebo_plugin) Command: {'cmd': ['/usr/bin/cmake', '/ros_ws/src/realsense_gazebo_plugin', '-DCMAKE_INSTALL_PREFIX=/ros_ws/install/realsense_gazebo_plugin'], 'cwd': '/ros_ws/build/realsense_gazebo_plugin', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/realsense_gazebo_plugin'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.082381] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099870] (-) TimerEvent: {}
+[0.132726] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.138862] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.181610] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.186064] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.186341] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.186715] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.188953] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199956] (-) TimerEvent: {}
+[0.243061] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.247786] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.247906] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.248286] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.250070] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300066] (-) TimerEvent: {}
+[0.343540] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400176] (-) TimerEvent: {}
+[0.414088] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.449453] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.454153] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.463105] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.475354] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.490924] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500239] (-) TimerEvent: {}
+[0.534332] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.537001] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600317] (-) TimerEvent: {}
+[0.607098] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.626574] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.664267] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.674255] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700401] (-) TimerEvent: {}
+[0.734071] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.734343] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800536] (-) TimerEvent: {}
+[0.810473] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.811621] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.862437] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.871082] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.872029] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[0.880939] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[0.900611] (-) TimerEvent: {}
+[0.950587] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[0.977894] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[0.994979] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.000691] (-) TimerEvent: {}
+[1.020507] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.037044] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.041800] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.048460] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.050146] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.050449] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.054365] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.062962] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.081712] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.084781] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.091789] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.094138] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.094263] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.096646] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.096731] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.099127] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.099249] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.100774] (-) TimerEvent: {}
+[1.101706] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.101790] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.104585] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.104704] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.107307] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.173828] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.176682] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.177219] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.193930] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.200883] (-) TimerEvent: {}
+[1.204634] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.208513] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.219424] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.241250] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.245024] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.252072] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.269866] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.272006] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.272285] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.287659] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.291967] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.300985] (-) TimerEvent: {}
+[1.301337] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.323227] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.325388] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.325708] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.326092] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.326494] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.327471] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.335292] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.336034] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.337887] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.338311] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.338421] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.341280] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.341655] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.397997] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.401065] (-) TimerEvent: {}
+[1.403933] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.411846] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.431125] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.435041] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.442383] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.461545] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.461749] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.462004] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.462325] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.465401] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.465536] (realsense_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[1.473534] (realsense_gazebo_plugin) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[1.494057] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.501154] (-) TimerEvent: {}
+[1.575739] (realsense_gazebo_plugin) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[1.575903] (realsense_gazebo_plugin) StderrLine: {'line': b'  By not providing "Findpoint_cloud_transport.cmake" in CMAKE_MODULE_PATH\n'}
+[1.575963] (realsense_gazebo_plugin) StderrLine: {'line': b'  this project has asked CMake to find a package configuration file provided\n'}
+[1.576010] (realsense_gazebo_plugin) StderrLine: {'line': b'  by "point_cloud_transport", but CMake did not find one.\n'}
+[1.576066] (realsense_gazebo_plugin) StderrLine: {'line': b'\n'}
+[1.576111] (realsense_gazebo_plugin) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[1.576156] (realsense_gazebo_plugin) StderrLine: {'line': b'  "point_cloud_transport" with any of the following names:\n'}
+[1.576230] (realsense_gazebo_plugin) StderrLine: {'line': b'\n'}
+[1.576279] (realsense_gazebo_plugin) StderrLine: {'line': b'    point_cloud_transportConfig.cmake\n'}
+[1.576328] (realsense_gazebo_plugin) StderrLine: {'line': b'    point_cloud_transport-config.cmake\n'}
+[1.576371] (realsense_gazebo_plugin) StderrLine: {'line': b'\n'}
+[1.576415] (realsense_gazebo_plugin) StderrLine: {'line': b'  Add the installation prefix of "point_cloud_transport" to CMAKE_PREFIX_PATH\n'}
+[1.576459] (realsense_gazebo_plugin) StderrLine: {'line': b'  or set "point_cloud_transport_DIR" to a directory containing one of the\n'}
+[1.576503] (realsense_gazebo_plugin) StderrLine: {'line': b'  above files.  If "point_cloud_transport" provides a separate development\n'}
+[1.576547] (realsense_gazebo_plugin) StderrLine: {'line': b'  package or SDK, be sure it has been installed.\n'}
+[1.576591] (realsense_gazebo_plugin) StderrLine: {'line': b'\n'}
+[1.576634] (realsense_gazebo_plugin) StderrLine: {'line': b'\x1b[0m\n'}
+[1.576678] (realsense_gazebo_plugin) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.576728] (realsense_gazebo_plugin) StdoutLine: {'line': b'See also "/ros_ws/build/realsense_gazebo_plugin/CMakeFiles/CMakeOutput.log".\n'}
+[1.585482] (realsense_gazebo_plugin) CommandEnded: {'returncode': 1}
+[1.602077] (-) TimerEvent: {}
+[1.605816] (realsense_gazebo_plugin) JobEnded: {'identifier': 'realsense_gazebo_plugin', 'rc': 1}
+[1.616133] (-) EventReactorShutdown: {}
