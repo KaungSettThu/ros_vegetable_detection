@@ -1,3 +1,4 @@
+/ros_ws/install/realsense2_description/share/realsense2_description/launch/launch_gazebo.py
 /ros_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py
 /ros_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py
 /ros_ws/install/realsense2_description/share/realsense2_description/meshes/d405.stl
