@@ -14,12 +14,19 @@ if [ "$(docker ps -aq -f name=^${CONTAINER_NAME}$)" ]; then
     docker rm -f ${CONTAINER_NAME}
 fi
 
+# Detect RealSense devices automatically
+DEVICES=""
+for d in /dev/video*; do
+    DEVICES+=" --device=$d:$d"
+done
+
 # Run container
 docker run -it \
     --name ${CONTAINER_NAME} \
     --net=host \
     --ipc=host \
     --privileged \
+    $DEVICES \
     -e DISPLAY=$DISPLAY \
     -e QT_X11_NO_MITSHM=1 \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \

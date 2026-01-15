@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     ros-humble-cv-bridge \
     ros-humble-robot-state-publisher \
     ros-humble-point-cloud-transport \
+    ros-humble-diagnostic-updater \
     ros-humble-xacro \
     && rm -rf /var/lib/apt/lists/*
 

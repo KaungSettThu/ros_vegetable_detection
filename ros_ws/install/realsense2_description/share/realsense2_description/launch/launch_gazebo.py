@@ -1,11 +1,19 @@
 import os
 from launch import LaunchDescription
+from launch.actions import TimerAction, DeclareLaunchArgument
 from launch_ros.actions import Node
+from launch.substitutions import LaunchConfiguration
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import IncludeLaunchDescription
 from ament_index_python.packages import get_package_share_directory
 import xacro
 
 def generate_launch_description():
-    # Path to your XACRO
+
+    # Launch argument for RViz
+    rviz_arg = DeclareLaunchArgument('rviz', default_value='true', description='Launch RViz?')
+
+    # Path to your RealSense XACRO
     xacro_file = os.path.join(
         get_package_share_directory('realsense2_description'),
         'urdf',
@@ -15,19 +23,16 @@ def generate_launch_description():
     # Process XACRO to URDF
     robot_description_config = xacro.process_file(xacro_file).toxml()
 
-    # Gazebo server & GUI
-    gazebo = Node(
-        package='gazebo_ros',
-        executable='gzserver',
-        name='gazebo',
-        output='screen'
+    # Include Gazebo launch (with gazebo_ros_factory)
+    gazebo_launch_file = os.path.join(
+        get_package_share_directory('gazebo_ros'),
+        'launch',
+        'gazebo.launch.py'
     )
 
-    gazebo_gui = Node(
-        package='gazebo_ros',
-        executable='gzclient',
-        name='gazebo_gui',
-        output='screen'
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([gazebo_launch_file]),
+        launch_arguments={'verbose': 'true'}.items()
     )
 
     # Robot state publisher
@@ -39,12 +44,17 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description_config}]
     )
 
-    # Spawn robot into Gazebo
-    spawn_entity = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        arguments=['-topic', 'robot_description', '-entity', 'realsense_camera'],
-        output='screen'
+    # Spawn entity in Gazebo after 3 seconds delay
+    spawn_entity = TimerAction(
+        period=3.0,
+        actions=[
+            Node(
+                package='gazebo_ros',
+                executable='spawn_entity.py',
+                arguments=['-topic', 'robot_description', '-entity', 'realsense_camera'],
+                output='screen'
+            )
+        ]
     )
 
     # Optional RViz
@@ -53,17 +63,19 @@ def generate_launch_description():
         'rviz',
         'urdf.rviz'
     )
+
     rviz = Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_config]
+        arguments=['-d', rviz_config],
+        condition=LaunchConfiguration('rviz')
     )
 
     return LaunchDescription([
+        rviz_arg,
         gazebo,
-        gazebo_gui,
         robot_state_publisher,
         spawn_entity,
         rviz

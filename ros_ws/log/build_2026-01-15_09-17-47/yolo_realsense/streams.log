@@ -1,0 +1,27 @@
+[0.447s] Invoking command in '/ros_ws/src/yolo_realsense': PYTHONPATH=/ros_ws/build/yolo_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/yolo_realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_realsense build --build-base /ros_ws/build/yolo_realsense/build install --record /ros_ws/build/yolo_realsense/install.log --single-version-externally-managed install_data
+[0.653s] running egg_info
+[0.653s] writing ../../build/yolo_realsense/yolo_realsense.egg-info/PKG-INFO
+[0.653s] writing dependency_links to ../../build/yolo_realsense/yolo_realsense.egg-info/dependency_links.txt
+[0.654s] writing entry points to ../../build/yolo_realsense/yolo_realsense.egg-info/entry_points.txt
+[0.654s] writing requirements to ../../build/yolo_realsense/yolo_realsense.egg-info/requires.txt
+[0.654s] writing top-level names to ../../build/yolo_realsense/yolo_realsense.egg-info/top_level.txt
+[0.655s] reading manifest file '../../build/yolo_realsense/yolo_realsense.egg-info/SOURCES.txt'
+[0.662s] writing manifest file '../../build/yolo_realsense/yolo_realsense.egg-info/SOURCES.txt'
+[0.662s] running build
+[0.662s] running build_py
+[0.662s] copying yolo_realsense/test.py -> /ros_ws/build/yolo_realsense/build/lib/yolo_realsense
+[0.663s] copying yolo_realsense/yolo_node.py -> /ros_ws/build/yolo_realsense/build/lib/yolo_realsense
+[0.663s] running install
+[0.663s] running install_lib
+[0.663s] copying /ros_ws/build/yolo_realsense/build/lib/yolo_realsense/test.py -> /ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense
+[0.663s] copying /ros_ws/build/yolo_realsense/build/lib/yolo_realsense/yolo_node.py -> /ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense
+[0.664s] byte-compiling /ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense/test.py to test.cpython-310.pyc
+[0.664s] byte-compiling /ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense/yolo_node.py to yolo_node.cpython-310.pyc
+[0.665s] running install_data
+[0.665s] running install_egg_info
+[0.666s] removing '/ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense-0.0.0-py3.10.egg-info' (and everything under it)
+[0.667s] Copying ../../build/yolo_realsense/yolo_realsense.egg-info to /ros_ws/install/yolo_realsense/lib/python3.10/site-packages/yolo_realsense-0.0.0-py3.10.egg-info
+[0.667s] running install_scripts
+[0.684s] Installing yolo_node script to /ros_ws/install/yolo_realsense/lib/yolo_realsense
+[0.684s] writing list of installed files to '/ros_ws/build/yolo_realsense/install.log'
+[0.701s] Invoked command in '/ros_ws/src/yolo_realsense' returned '0': PYTHONPATH=/ros_ws/build/yolo_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/yolo_realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_realsense build --build-base /ros_ws/build/yolo_realsense/build install --record /ros_ws/build/yolo_realsense/install.log --single-version-externally-managed install_data
