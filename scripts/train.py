@@ -16,18 +16,18 @@ model.train(
     imgsz=640,
     batch=16,
     project=RESULTS_DIR,  # where results are saved
-    name="exp2",           # folder name for this run
+    name="exp_final",           # folder name for this run
     exist_ok=True,         # overwrite if folder exists
 )
 
 # validate the model 
-best_model_path = os.path.join(RESULTS_DIR, "exp1/weights/best.pt")
+best_model_path = os.path.join(RESULTS_DIR, "exp_final/weights/best.pt")
 metrics = model.val(model=best_model_path, data=DATA_YAML)
 print("Validation metrics:", metrics)
 
 # test the model using test images
 TEST_IMAGES = "../dataset/test/images"  # folder with test images
-output_dir = os.path.join(RESULTS_DIR, "exp1/predictions")
+output_dir = os.path.join(RESULTS_DIR, "exp_final/predictions")
 
 results = model.predict(
     source=TEST_IMAGES,

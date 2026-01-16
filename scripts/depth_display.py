@@ -89,7 +89,7 @@ try:
                 color = class_colors.get(cls_name, (255, 255, 0))  # default cyan
 
                 # Depth at center of bounding box
-                cx = (x1 + x2) // 2
+                cx = (x1 + x2) // 2 
                 cy = (y1 + y2) // 2
                 z = depth_image[cy, cx] * depth_scale  # meters
 
