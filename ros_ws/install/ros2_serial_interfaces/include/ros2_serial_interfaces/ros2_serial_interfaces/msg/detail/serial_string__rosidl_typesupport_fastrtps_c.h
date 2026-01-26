@@ -1,1 +1,0 @@
-/ros_ws/build/ros2_serial_interfaces/rosidl_typesupport_fastrtps_c/ros2_serial_interfaces/msg/detail/serial_string__rosidl_typesupport_fastrtps_c.h

@@ -1,1 +1,0 @@
-/ros_ws/src/ur3e_robotiq_gz_sim/scripts/peg_pick_insert_demo.py

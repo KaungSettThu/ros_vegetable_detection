@@ -1,1 +1,0 @@
-/ros_ws/build/ur3e_robotiq_gz_sim/ament_cmake_environment_hooks/local_setup.zsh

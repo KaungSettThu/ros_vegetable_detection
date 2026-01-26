@@ -1,1 +1,0 @@
-/ros_ws/src/ur3e_robotiq_gz_sim/scripts/conveyor_pick_place_script.py

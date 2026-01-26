@@ -1,1 +1,0 @@
-controller_manager:joint_state_broadcaster:joint_trajectory_controller:linkattacher_msgs:rclcpp:robot_state_publisher:ros_gz_sim:trajectory_msgs:xacro

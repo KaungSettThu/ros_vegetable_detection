@@ -1,1 +1,0 @@
-Invoking command in '/ros_ws/build/ros2_serial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros_ws/src/ros2_serial/ros2_serial_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_ws/install/ros2_serial_interfaces

@@ -1,1 +1,0 @@
-/ros_ws/src/ur3e_robotiq_gz_sim/launch/gz_spwan_ur3e_robotiq_camera.launch.py

@@ -1,4 +1,0 @@
-Invoking command in '/ros_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur_description -- -j16 -l16
-Invoked command in '/ros_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur_description -- -j16 -l16
-Invoking command in '/ros_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --install /ros_ws/build/ur_description
-Invoked command in '/ros_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --install /ros_ws/build/ur_description

@@ -1,1 +1,0 @@
-Invoking command in '/ros_ws/build/ros2_cppserial': CMAKE_PREFIX_PATH=/ros_ws/install/ros2_serial_interfaces:/ros_ws/install/robotiq_description:/opt/ros/humble /usr/bin/cmake /ros_ws/src/ros2_serial/ros2_cppserial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_ws/install/ros2_cppserial

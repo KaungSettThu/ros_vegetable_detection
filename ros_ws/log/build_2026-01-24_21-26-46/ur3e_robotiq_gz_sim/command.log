@@ -1,3 +1,0 @@
-Invoking command in '/ros_ws/build/ur3e_robotiq_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur3e_robotiq_gz_sim -- -j16 -l16
-Invoked command in '/ros_ws/build/ur3e_robotiq_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur3e_robotiq_gz_sim -- -j16 -l16
-Invoking command in '/ros_ws/build/ur3e_robotiq_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros_ws/build/ur3e_robotiq_gz_sim

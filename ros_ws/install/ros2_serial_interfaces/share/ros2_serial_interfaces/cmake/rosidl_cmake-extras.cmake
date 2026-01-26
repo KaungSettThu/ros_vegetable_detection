@@ -1,1 +1,0 @@
-/ros_ws/build/ros2_serial_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

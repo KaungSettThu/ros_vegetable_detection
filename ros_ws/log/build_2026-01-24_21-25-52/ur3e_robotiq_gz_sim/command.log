@@ -1,1 +1,0 @@
-Invoking command in '/ros_ws/build/ur3e_robotiq_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros_ws/src/ur3e_robotiq_gz_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_ws/install/ur3e_robotiq_gz_sim

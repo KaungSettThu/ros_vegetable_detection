@@ -1,1 +1,0 @@
-/ros_ws/build/ros2_serial_interfaces/ament_cmake_core/ros2_serial_interfacesConfig.cmake

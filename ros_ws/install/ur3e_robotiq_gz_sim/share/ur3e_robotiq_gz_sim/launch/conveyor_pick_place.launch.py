@@ -1,1 +1,0 @@
-/ros_ws/src/ur3e_robotiq_gz_sim/launch/conveyor_pick_place.launch.py
