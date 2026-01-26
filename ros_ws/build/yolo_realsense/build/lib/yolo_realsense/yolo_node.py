@@ -3,7 +3,7 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import PointStamped
+from geometry_msgs.msg import PointStamped, Vector3Stamped
 
 from cv_bridge import CvBridge
 import numpy as np
@@ -23,6 +23,8 @@ class YoloNode(Node):
         self.class_pub = self.create_publisher(String, 'detected_object/class', 10)
         self.pos_pub = self.create_publisher(PointStamped, 'detected_object/position', 10)
         self.image_pub = self.create_publisher(Image, 'yolo_image', 10)
+        self.dim_pub = self.create_publisher(Vector3Stamped, 'detected_object/dimensions', 10)
+
 
         self.bridge = CvBridge()
 
@@ -72,6 +74,16 @@ class YoloNode(Node):
                 (0, 255, 0),
                 2
             )
+
+            # Publish dimensions
+            dims = det['dimensions']
+            dim_msg = Vector3Stamped()
+            dim_msg.header.stamp = self.get_clock().now().to_msg()
+            dim_msg.header.frame_id = "camera_link"
+            dim_msg.vector.x = float(dims[0])
+            dim_msg.vector.y = float(dims[1])
+            dim_msg.vector.z = float(dims[2])
+            self.dim_pub.publish(dim_msg)
 
         # Publish annotated image
         img_msg = self.bridge.cv2_to_imgmsg(color, encoding='bgr8')
