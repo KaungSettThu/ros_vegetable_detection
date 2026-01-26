@@ -1,0 +1,1 @@
+/ros_ws/src/ur3e_robotiq_gz_sim/launch/bringup_pick_place_mtc_all_in_one.launch.py

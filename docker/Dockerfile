@@ -1,15 +1,27 @@
-# Dockerfile for ROS 2 + Gazebo + YOLO/Open3D/RealSense
-
-# Base image with ROS 2 Humble and desktop tools
 FROM osrf/ros:humble-desktop
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install system dependencies
+# ----------------------------
+# Base system + ROS packages
+# ----------------------------
 RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-opencv \
+    python3-colcon-common-extensions \
+    python3-rosdep \
+    build-essential \
+    curl \
+    gnupg2 \
+    lsb-release \
+    udev \
+    # ROS core
     ros-humble-gazebo-ros-pkgs \
+    ros-humble-gazebo-ros2-control \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
+    ros-humble-joint-state-broadcaster \
+    ros-humble-joint-trajectory-controller \
     ros-humble-rviz2 \
     ros-humble-image-transport \
     ros-humble-cv-bridge \
@@ -17,26 +29,36 @@ RUN apt-get update && apt-get install -y \
     ros-humble-point-cloud-transport \
     ros-humble-diagnostic-updater \
     ros-humble-xacro \
+    ros-humble-ros-gz-bridge \
+    ros-humble-ros-gz-sim \
+    # Serial support
+    ros-humble-serial-driver \
+    ros-humble-io-context \
+    ros-humble-asio-cmake-module \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages
+# ----------------------------
+# Python packages (YOLO / Open3D)
+# ----------------------------
 RUN pip3 install --no-cache-dir \
     ultralytics \
     numpy \
     open3d \
-    pyrealsense2 \
     opencv-python
 
-# Set up ROS 2 workspace
+# ----------------------------
+# rosdep init
+# ----------------------------
+RUN rosdep init || true && rosdep update
+
+# ----------------------------
+# Workspace
+# ----------------------------
 WORKDIR /ros_ws
 RUN mkdir -p src
 
-# Build ROS workspace
-RUN /bin/bash -c "source /opt/ros/humble/setup.bash && colcon build"
+# Auto-source ROS
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
-# Automatically source ROS workspace on container start
-RUN echo "source /ros_ws/install/setup.bash" >> ~/.bashrc
-
-# Set default command
 CMD ["bash"]
 

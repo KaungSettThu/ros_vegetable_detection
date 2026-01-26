@@ -1,0 +1,48 @@
+[0.335s] Invoking command in '/ros_ws/build/ur3e_robotiq_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur3e_robotiq_gz_sim -- -j16 -l16
+[0.615s] Invoked command in '/ros_ws/build/ur3e_robotiq_gz_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --build /ros_ws/build/ur3e_robotiq_gz_sim -- -j16 -l16
+[0.616s] Invoking command in '/ros_ws/build/ur3e_robotiq_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --install /ros_ws/build/ur3e_robotiq_gz_sim
+[0.632s] -- Install configuration: ""
+[0.633s] -- Execute custom install script
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/bringup_pick_place_mtc_all_in_one.launch.py
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/conveyor_pick_place.launch.py
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz.launch.py
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz_moveit_ur3e_robotiq_camera.launch.py
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz_spwan_ur3e_robotiq_camera.launch.py
+[0.636s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/peg_demo.launch.py
+[0.637s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/spwan_ur3e_robotiq_camera.launch.py
+[0.637s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/view_ur_robotiq_camera.launch.py
+[0.637s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/config/initial_positions.yaml
+[0.637s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/config/ur3e_robotiq_ros2_controllers.yaml
+[0.640s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_robotiq.xacro
+[0.640s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_robotiq_gripper.macro.urdf.xacro
+[0.640s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_ur_robotiq.ros2_control.xacro
+[0.640s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_ur_robotiq_camera.urdf.xacro
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/ur3e_ros2_control.xacro
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/ur3e_with_robotiq_gz.urdf.xacro
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/conveyor.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/conveyor_base.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/empty.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/peg_in_hole_demo.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/pick_place_table_world.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/conveyor/model.config
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/conveyor/model.sdf
+[0.641s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/cube/model.sdf
+[0.642s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/peg_pick_insert_demo.py
+[0.642s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/conveyor_pick_place_script.py
+[0.642s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/cube_conveyor_node.py
+[0.642s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/package_run_dependencies/ur3e_robotiq_gz_sim
+[0.643s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/parent_prefix_path/ur3e_robotiq_gz_sim
+[0.643s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/ament_prefix_path.sh
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/ament_prefix_path.dsv
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/path.sh
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/path.dsv
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.bash
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.sh
+[0.644s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.zsh
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.dsv
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/package.dsv
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/packages/ur3e_robotiq_gz_sim
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/cmake/ur3e_robotiq_gz_simConfig.cmake
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/cmake/ur3e_robotiq_gz_simConfig-version.cmake
+[0.645s] -- Up-to-date symlink: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/package.xml
+[0.688s] Invoked command in '/ros_ws/build/ur3e_robotiq_gz_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/ros2_serial_interfaces:/opt/ros/humble /usr/bin/cmake --install /ros_ws/build/ur3e_robotiq_gz_sim

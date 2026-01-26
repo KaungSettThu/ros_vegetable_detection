@@ -1,0 +1,52 @@
+[31mCMake Error at CMakeLists.txt:31 (add_library):
+  Target "robotiq_driver" links to target "serial::serial" but the target was
+  not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  Target "test_robotiq_gripper_hardware_interface" links to target
+  "serial::serial" but the target was not found.  Perhaps a find_package()
+  call is missing for an IMPORTED target, or an ALIAS target is missing?
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  tests/CMakeLists.txt:16 (ament_add_gmock)
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  Target "test_default_serial_factory" links to target "serial::serial" but
+  the target was not found.  Perhaps a find_package() call is missing for an
+  IMPORTED target, or an ALIAS target is missing?
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  tests/CMakeLists.txt:31 (ament_add_gmock)
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  Target "test_default_driver_factory" links to target "serial::serial" but
+  the target was not found.  Perhaps a find_package() call is missing for an
+  IMPORTED target, or an ALIAS target is missing?
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  tests/CMakeLists.txt:43 (ament_add_gmock)
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  Target "test_crc_utils" links to target "serial::serial" but the target was
+  not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  tests/CMakeLists.txt:55 (ament_add_gmock)
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  Target "test_data_utils" links to target "serial::serial" but the target
+  was not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  tests/CMakeLists.txt:66 (ament_add_gmock)
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m

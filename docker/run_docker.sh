@@ -20,7 +20,7 @@ for d in /dev/video*; do
     DEVICES+=" --device=$d:$d"
 done
 
-# Run container
+# Run container and setup ROS workspace
 docker run -it \
     --name ${CONTAINER_NAME} \
     --net=host \
@@ -31,5 +31,5 @@ docker run -it \
     -e QT_X11_NO_MITSHM=1 \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
     -v ${PROJECT_ROOT}/ros_ws:/ros_ws \
-    ${IMAGE_NAME}
+    ${IMAGE_NAME} 
 

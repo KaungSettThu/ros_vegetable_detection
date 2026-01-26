@@ -1,11 +1,1 @@
-# request
-string json "calib run"
----
-# result
-bool success
-string error_msg
-string calibration
-float32 health
----
-# feedback
-float32 progress
+/ros_ws/src/realsense-ros/realsense2_camera_msgs/action/TriggeredCalibration.action

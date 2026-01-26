@@ -1,4 +1,1 @@
-
-bool success
-string error_message
-string calib_config
+/ros_ws/build/realsense2_camera_msgs/rosidl_cmake/srv/CalibConfigRead_Response.msg

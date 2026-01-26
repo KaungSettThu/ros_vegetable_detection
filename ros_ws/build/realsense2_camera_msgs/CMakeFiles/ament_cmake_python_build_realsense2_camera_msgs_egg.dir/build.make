@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/src/realsense2_camera_msgs
+CMAKE_SOURCE_DIR = /ros_ws/src/realsense-ros/realsense2_camera_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/build/realsense2_camera_msgs
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/depend:
-	cd /ros_ws/build/realsense2_camera_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/src/realsense2_camera_msgs /ros_ws/src/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs/CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /ros_ws/build/realsense2_camera_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/src/realsense-ros/realsense2_camera_msgs /ros_ws/src/realsense-ros/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs /ros_ws/build/realsense2_camera_msgs/CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/depend
 

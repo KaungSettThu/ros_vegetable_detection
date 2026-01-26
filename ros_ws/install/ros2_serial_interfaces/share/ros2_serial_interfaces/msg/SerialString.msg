@@ -1,0 +1,1 @@
+/ros_ws/src/ros2_serial/ros2_serial_interfaces/msg/SerialString.msg

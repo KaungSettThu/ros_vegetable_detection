@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/src/realsense2_camera_msgs
+CMAKE_SOURCE_DIR = /ros_ws/src/realsense-ros/realsense2_camera_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/build/realsense2_camera_msgs

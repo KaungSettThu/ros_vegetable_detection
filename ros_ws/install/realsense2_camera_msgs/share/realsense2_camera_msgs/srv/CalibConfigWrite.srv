@@ -1,4 +1,1 @@
-string calib_config
----
-bool success
-string error_message
+/ros_ws/src/realsense-ros/realsense2_camera_msgs/srv/CalibConfigWrite.srv

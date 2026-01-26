@@ -1,0 +1,853 @@
+[0.000000] (-) TimerEvent: {}
+[0.000240] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.000280] (realsense2_ros_mqtt_bridge) JobQueued: {'identifier': 'realsense2_ros_mqtt_bridge', 'dependencies': OrderedDict()}
+[0.000293] (robotiq_controllers) JobQueued: {'identifier': 'robotiq_controllers', 'dependencies': OrderedDict()}
+[0.000304] (robotiq_description) JobQueued: {'identifier': 'robotiq_description', 'dependencies': OrderedDict()}
+[0.000315] (robotiq_driver) JobQueued: {'identifier': 'robotiq_driver', 'dependencies': OrderedDict()}
+[0.000330] (ros2_serial_interfaces) JobQueued: {'identifier': 'ros2_serial_interfaces', 'dependencies': OrderedDict()}
+[0.000341] (ur3e_robotiq_gz_sim) JobQueued: {'identifier': 'ur3e_robotiq_gz_sim', 'dependencies': OrderedDict()}
+[0.000351] (ur_description) JobQueued: {'identifier': 'ur_description', 'dependencies': OrderedDict()}
+[0.000361] (yolo_realsense) JobQueued: {'identifier': 'yolo_realsense', 'dependencies': OrderedDict()}
+[0.000373] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/ros_ws/install/realsense2_camera_msgs')])}
+[0.000386] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/ros_ws/install/realsense2_camera_msgs')])}
+[0.000401] (realsense2_rviz_plugin) JobQueued: {'identifier': 'realsense2_rviz_plugin', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/ros_ws/install/realsense2_camera_msgs')])}
+[0.000412] (robotiq_hardware_tests) JobQueued: {'identifier': 'robotiq_hardware_tests', 'dependencies': OrderedDict([('robotiq_driver', '/ros_ws/install/robotiq_driver')])}
+[0.000423] (ros2_cppserial) JobQueued: {'identifier': 'ros2_cppserial', 'dependencies': OrderedDict([('ros2_serial_interfaces', '/ros_ws/install/ros2_serial_interfaces')])}
+[0.000809] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.005630] (robotiq_driver) JobStarted: {'identifier': 'robotiq_driver'}
+[0.008055] (ros2_serial_interfaces) JobStarted: {'identifier': 'ros2_serial_interfaces'}
+[0.010230] (realsense2_ros_mqtt_bridge) JobStarted: {'identifier': 'realsense2_ros_mqtt_bridge'}
+[0.014025] (robotiq_controllers) JobStarted: {'identifier': 'robotiq_controllers'}
+[0.016108] (robotiq_description) JobStarted: {'identifier': 'robotiq_description'}
+[0.018095] (ur3e_robotiq_gz_sim) JobStarted: {'identifier': 'ur3e_robotiq_gz_sim'}
+[0.020358] (ur_description) JobStarted: {'identifier': 'ur_description'}
+[0.022735] (yolo_realsense) JobStarted: {'identifier': 'yolo_realsense'}
+[0.027645] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.028079] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.028644] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/realsense2_camera_msgs', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.030158] (robotiq_driver) JobProgress: {'identifier': 'robotiq_driver', 'progress': 'cmake'}
+[0.030688] (robotiq_driver) Command: {'cmd': ['/usr/bin/cmake', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ros_ws/install/robotiq_driver'], 'cwd': '/ros_ws/build/robotiq_driver', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/robotiq_driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.031610] (ros2_serial_interfaces) JobProgress: {'identifier': 'ros2_serial_interfaces', 'progress': 'cmake'}
+[0.031815] (ros2_serial_interfaces) JobProgress: {'identifier': 'ros2_serial_interfaces', 'progress': 'build'}
+[0.032043] (ros2_serial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/ros2_serial_interfaces', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/ros2_serial_interfaces', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ros2_serial_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099875] (-) TimerEvent: {}
+[0.200328] (-) TimerEvent: {}
+[0.283378] (robotiq_controllers) JobProgress: {'identifier': 'robotiq_controllers', 'progress': 'cmake'}
+[0.284155] (robotiq_controllers) JobProgress: {'identifier': 'robotiq_controllers', 'progress': 'build'}
+[0.284693] (robotiq_controllers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/robotiq_controllers', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/robotiq_controllers', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/robotiq_controllers'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.286438] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'cmake'}
+[0.286845] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'build'}
+[0.287298] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/robotiq_description', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/robotiq_description', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/robotiq_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.289108] (ur3e_robotiq_gz_sim) JobProgress: {'identifier': 'ur3e_robotiq_gz_sim', 'progress': 'cmake'}
+[0.289575] (ur3e_robotiq_gz_sim) JobProgress: {'identifier': 'ur3e_robotiq_gz_sim', 'progress': 'build'}
+[0.290116] (ur3e_robotiq_gz_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/ur3e_robotiq_gz_sim', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/ur3e_robotiq_gz_sim', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ur3e_robotiq_gz_sim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.291638] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'cmake'}
+[0.292242] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'build'}
+[0.292667] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/build/ur_description', '--', '-j16', '-l16'], 'cwd': '/ros_ws/build/ur_description', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ur_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.295583] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.296227] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.296349] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_realsense2_camera_msgs\n'}
+[0.296450] (robotiq_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.296659] (robotiq_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.296763] (robotiq_driver) StdoutLine: {'line': b'-- Found hardware_interface: 2.53.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[0.296863] (robotiq_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.296962] (robotiq_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.297075] (robotiq_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.297175] (robotiq_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.297281] (robotiq_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.298069] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_generator_c\x1b[0m\n'}
+[0.298422] (ros2_serial_interfaces) StdoutLine: {'line': b'[  3%] Built target ros2_serial_interfaces__cpp\n'}
+[0.298530] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 12%] Built target ros2_serial_interfaces__rosidl_generator_c\n'}
+[0.298637] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.298739] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_ros2_serial_interfaces\n'}
+[0.298843] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[0.298949] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.299514] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.299772] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.299870] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.299974] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 22%] Built target ros2_serial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.300077] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 32%] Built target ros2_serial_interfaces__rosidl_typesupport_c\n'}
+[0.300175] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 41%] Built target ros2_serial_interfaces__rosidl_typesupport_cpp\n'}
+[0.300268] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 51%] Built target ros2_serial_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.300363] (-) TimerEvent: {}
+[0.300889] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 61%] Built target ros2_serial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.301383] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_serial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.301634] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_serial_interfaces\n'}
+[0.301736] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 74%] Built target ros2_serial_interfaces__py\n'}
+[0.301837] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_generator_py\x1b[0m\n'}
+[0.301935] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 80%] Built target ros2_serial_interfaces__rosidl_generator_py\n'}
+[0.302223] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.302331] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.302428] (ros2_serial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_serial_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.302518] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 87%] Built target ros2_serial_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.302614] (ros2_serial_interfaces) StdoutLine: {'line': b'[ 93%] Built target ros2_serial_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.302710] (ros2_serial_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_serial_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.324770] (ros2_serial_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.325896] (ros2_serial_interfaces) StdoutLine: {'line': b'writing ros2_serial_interfaces.egg-info/PKG-INFO\n'}
+[0.326126] (ros2_serial_interfaces) StdoutLine: {'line': b'writing dependency_links to ros2_serial_interfaces.egg-info/dependency_links.txt\n'}
+[0.326307] (ros2_serial_interfaces) StdoutLine: {'line': b'writing top-level names to ros2_serial_interfaces.egg-info/top_level.txt\n'}
+[0.329624] (ros2_serial_interfaces) StdoutLine: {'line': b"reading manifest file 'ros2_serial_interfaces.egg-info/SOURCES.txt'\n"}
+[0.330354] (ros2_serial_interfaces) StdoutLine: {'line': b"writing manifest file 'ros2_serial_interfaces.egg-info/SOURCES.txt'\n"}
+[0.345376] (robotiq_controllers) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o\x1b[0m\n'}
+[0.366611] (ros2_serial_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ros2_serial_interfaces_egg\n'}
+[0.400516] (-) TimerEvent: {}
+[0.406979] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.408517] (realsense2_camera_msgs) StdoutLine: {'line': b'creating realsense2_camera_msgs.egg-info\n'}
+[0.408931] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[0.409227] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[0.409553] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[0.409816] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.413626] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.414747] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.445366] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[0.490138] (robotiq_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.491338] (robotiq_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500587] (-) TimerEvent: {}
+[0.509153] (robotiq_driver) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.517729] (robotiq_driver) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.533519] (robotiq_driver) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.541494] (robotiq_driver) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.550104] (robotiq_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.599577] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.600228] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'install'}
+[0.600651] (-) TimerEvent: {}
+[0.606786] (robotiq_driver) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[0.607041] (robotiq_driver) StderrLine: {'line': b'  By not providing "Findros2_serial_interfaces.cmake" in CMAKE_MODULE_PATH\n'}
+[0.607163] (robotiq_driver) StderrLine: {'line': b'  this project has asked CMake to find a package configuration file provided\n'}
+[0.607258] (robotiq_driver) StderrLine: {'line': b'  by "ros2_serial_interfaces", but CMake did not find one.\n'}
+[0.607354] (robotiq_driver) StderrLine: {'line': b'\n'}
+[0.607449] (robotiq_driver) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[0.607546] (robotiq_driver) StderrLine: {'line': b'  "ros2_serial_interfaces" with any of the following names:\n'}
+[0.607641] (robotiq_driver) StderrLine: {'line': b'\n'}
+[0.607740] (robotiq_driver) StderrLine: {'line': b'    ros2_serial_interfacesConfig.cmake\n'}
+[0.607836] (robotiq_driver) StderrLine: {'line': b'    ros2_serial_interfaces-config.cmake\n'}
+[0.607936] (robotiq_driver) StderrLine: {'line': b'\n'}
+[0.608044] (robotiq_driver) StderrLine: {'line': b'  Add the installation prefix of "ros2_serial_interfaces" to\n'}
+[0.608133] (robotiq_driver) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "ros2_serial_interfaces_DIR" to a directory\n'}
+[0.608246] (robotiq_driver) StderrLine: {'line': b'  containing one of the above files.  If "ros2_serial_interfaces" provides a\n'}
+[0.608337] (robotiq_driver) StderrLine: {'line': b'  separate development package or SDK, be sure it has been installed.\n'}
+[0.608428] (robotiq_driver) StderrLine: {'line': b'\n'}
+[0.608517] (robotiq_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[0.608606] (robotiq_driver) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.608975] (robotiq_driver) StdoutLine: {'line': b'See also "/ros_ws/build/robotiq_driver/CMakeFiles/CMakeOutput.log".\n'}
+[0.609660] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/build/robotiq_description'], 'cwd': '/ros_ws/build/robotiq_description', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/robotiq_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.610257] (ur_description) CommandEnded: {'returncode': 0}
+[0.610770] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'install'}
+[0.611427] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/build/ur_description'], 'cwd': '/ros_ws/build/ur_description', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ur_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.612031] (ur3e_robotiq_gz_sim) CommandEnded: {'returncode': 0}
+[0.612620] (ur3e_robotiq_gz_sim) JobProgress: {'identifier': 'ur3e_robotiq_gz_sim', 'progress': 'install'}
+[0.613149] (ur3e_robotiq_gz_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/build/ur3e_robotiq_gz_sim'], 'cwd': '/ros_ws/build/ur3e_robotiq_gz_sim', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ur3e_robotiq_gz_sim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.618533] (ros2_serial_interfaces) CommandEnded: {'returncode': 0}
+[0.619364] (ros2_serial_interfaces) JobProgress: {'identifier': 'ros2_serial_interfaces', 'progress': 'install'}
+[0.619859] (ros2_serial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/build/ros2_serial_interfaces'], 'cwd': '/ros_ws/build/ros2_serial_interfaces', 'env': OrderedDict([('HOSTNAME', 'kast-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros_ws/src/ros2_robotiq_gripper/robotiq_driver'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/ros_ws/build/ros2_serial_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.622105] (ur_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.623323] (ur_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.623460] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/initial_positions.yaml\n'}
+[0.623622] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.624108] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.624226] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/bringup_pick_place_mtc_all_in_one.launch.py\n'}
+[0.624325] (robotiq_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.624513] (robotiq_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.624613] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml\n'}
+[0.624712] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/launch/robotiq_control.launch.py\n'}
+[0.624807] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py\n'}
+[0.624903] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.625092] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.625253] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.625350] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.625443] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.625533] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.625622] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl\n'}
+[0.625712] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl\n'}
+[0.625801] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl\n'}
+[0.625909] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl\n'}
+[0.626010] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl\n'}
+[0.626103] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl\n'}
+[0.626192] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl\n'}
+[0.626280] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl\n'}
+[0.626371] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl\n'}
+[0.626460] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl\n'}
+[0.626973] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.627071] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.627162] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.627254] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.627534] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.627624] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.627881] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae\n'}
+[0.627986] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae\n'}
+[0.628085] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae\n'}
+[0.628176] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae\n'}
+[0.628265] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae\n'}
+[0.628353] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae\n'}
+[0.628584] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae\n'}
+[0.628679] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae\n'}
+[0.628771] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae\n'}
+[0.628861] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae\n'}
+[0.628952] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/rviz/view_urdf.rviz\n'}
+[0.629051] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/2f_140.ros2_control.xacro\n'}
+[0.629142] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro\n'}
+[0.629233] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140.xacro\n'}
+[0.629323] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_gripper.urdf.xacro\n'}
+[0.629420] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_macro.urdf.xacro\n'}
+[0.629634] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro\n'}
+[0.629726] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro\n'}
+[0.629818] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro\n'}
+[0.629907] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.630098] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml\n'}
+[0.630200] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description\n'}
+[0.630295] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description\n'}
+[0.630387] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh\n'}
+[0.630478] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv\n'}
+[0.630570] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/environment/path.sh\n'}
+[0.630663] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/environment/path.dsv\n'}
+[0.630762] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/local_setup.bash\n'}
+[0.630867] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/local_setup.sh\n'}
+[0.630958] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/local_setup.zsh\n'}
+[0.631069] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/local_setup.dsv\n'}
+[0.631170] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/package.dsv\n'}
+[0.631265] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description\n'}
+[0.631357] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake\n'}
+[0.631451] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake\n'}
+[0.631846] (robotiq_description) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/robotiq_description/share/robotiq_description/package.xml\n'}
+[0.631990] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.633049] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_serial_interfaces\n'}
+[0.633223] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__functions.h\n'}
+[0.633321] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__struct.h\n'}
+[0.633762] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__type_support.h\n'}
+[0.633870] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.633975] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/serial_string.h\n'}
+[0.634123] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/library_path.sh\n'}
+[0.634225] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/library_path.dsv\n'}
+[0.634322] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/conveyor_pick_place.launch.py\n'}
+[0.634550] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__rosidl_typesupport_fastrtps_c.h\n'}
+[0.635365] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.635505] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__builder.hpp\n'}
+[0.635608] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__struct.hpp\n'}
+[0.635707] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__traits.hpp\n'}
+[0.635806] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__type_support.hpp\n'}
+[0.635904] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.636016] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/serial_string.hpp\n'}
+[0.636134] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.636234] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.636330] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__rosidl_typesupport_introspection_c.h\n'}
+[0.636424] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.636680] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/include/ros2_serial_interfaces/ros2_serial_interfaces/msg/detail/serial_string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.636780] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/pythonpath.sh\n'}
+[0.636890] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/pythonpath.dsv\n'}
+[0.636997] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.637100] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.637198] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.637294] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.637389] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/__init__.py\n'}
+[0.637932] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/_ros2_serial_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.638079] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/_ros2_serial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.638184] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/_ros2_serial_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.638283] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/libros2_serial_interfaces__rosidl_generator_py.so\n'}
+[0.638382] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/msg/__init__.py\n'}
+[0.638484] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/msg/_serial_string.py\n'}
+[0.638579] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/msg/_serial_string_s.c\n'}
+[0.638727] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.638832] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.638931] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.639052] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.639456] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.639561] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/ros2_serial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.639661] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/msg/SerialString.idl\n'}
+[0.639760] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/msg/SerialString.msg\n'}
+[0.639858] (robotiq_driver) CommandEnded: {'returncode': 1}
+[0.640220] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_serial_interfaces\n'}
+[0.640353] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_serial_interfaces\n'}
+[0.640456] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/ament_prefix_path.sh\n'}
+[0.640561] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.640660] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/path.sh\n'}
+[0.640761] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/environment/path.dsv\n'}
+[0.640861] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/local_setup.bash\n'}
+[0.640960] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/local_setup.sh\n'}
+[0.641079] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/local_setup.zsh\n'}
+[0.641177] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/local_setup.dsv\n'}
+[0.641276] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/package.dsv\n'}
+[0.641425] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml\n'}
+[0.642152] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz.launch.py\n'}
+[0.643296] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.644573] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml\n'}
+[0.644997] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ament_index/resource_index/packages/ros2_serial_interfaces\n'}
+[0.645262] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.645714] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz_moveit_ur3e_robotiq_camera.launch.py\n'}
+[0.645936] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.646054] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.646157] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.646251] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.646343] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.646760] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.646888] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfacesConfig.cmake\n'}
+[0.647346] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfacesConfig-version.cmake\n'}
+[0.647614] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/package.xml\n'}
+[0.647726] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_generator_c.so\n'}
+[0.647819] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.647914] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.648052] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.648169] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_c.so\n'}
+[0.648258] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.648345] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.653083] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml\n'}
+[0.656685] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/gz_spwan_ur3e_robotiq_camera.launch.py\n'}
+[0.663086] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml\n'}
+[0.664719] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/peg_demo.launch.py\n'}
+[0.673160] (robotiq_description) JobEnded: {'identifier': 'robotiq_description', 'rc': 0}
+[0.675315] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/spwan_ur3e_robotiq_camera.launch.py\n'}
+[0.675898] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml\n'}
+[0.681972] (robotiq_driver) JobEnded: {'identifier': 'robotiq_driver', 'rc': 1}
+[0.682588] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml\n'}
+[0.683129] (ros2_serial_interfaces) StdoutLine: {'line': b"Listing '/ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces'...\n"}
+[0.683348] (ros2_serial_interfaces) StdoutLine: {'line': b"Listing '/ros_ws/install/ros2_serial_interfaces/local/lib/python3.10/dist-packages/ros2_serial_interfaces/msg'...\n"}
+[0.685856] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/launch/view_ur_robotiq_camera.launch.py\n'}
+[0.688898] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/lib/libros2_serial_interfaces__rosidl_generator_py.so\n'}
+[0.689147] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.689316] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.689485] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.689703] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.689850] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.689988] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.690178] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.690290] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.690421] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.690532] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.690638] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.690754] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.690879] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.691003] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.691129] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/ros2_serial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.691245] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.691380] (ros2_serial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/install/ros2_serial_interfaces/share/ros2_serial_interfaces/cmake/export_ros2_serial_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.692419] (ros2_serial_interfaces) JobEnded: {'identifier': 'ros2_serial_interfaces', 'rc': 'SIGINT'}
+[0.693025] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml\n'}
+[0.696936] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/config/initial_positions.yaml\n'}
+[0.700754] (-) TimerEvent: {}
+[0.703000] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml\n'}
+[0.706718] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/config/ur3e_robotiq_ros2_controllers.yaml\n'}
+[0.713314] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml\n'}
+[0.717449] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_robotiq.xacro\n'}
+[0.724128] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml\n'}
+[0.727067] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_robotiq_gripper.macro.urdf.xacro\n'}
+[0.734034] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml\n'}
+[0.736148] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_ur_robotiq.ros2_control.xacro\n'}
+[0.745021] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur15/default_kinematics.yaml\n'}
+[0.745948] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/gz_ur_robotiq_camera.urdf.xacro\n'}
+[0.754845] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur15/joint_limits.yaml\n'}
+[0.755578] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/ur3e_ros2_control.xacro\n'}
+[0.764121] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur15/physical_parameters.yaml\n'}
+[0.764511] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/urdf/ur3e_with_robotiq_gz.urdf.xacro\n'}
+[0.772972] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur15/visual_parameters.yaml\n'}
+[0.773369] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/conveyor.sdf\n'}
+[0.782152] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml\n'}
+[0.782540] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/conveyor_base.sdf\n'}
+[0.791708] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/empty.sdf\n'}
+[0.791922] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml\n'}
+[0.800702] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml\n'}
+[0.800877] (-) TimerEvent: {}
+[0.801047] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/peg_in_hole_demo.sdf\n'}
+[0.809501] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/worlds/pick_place_table_world.sdf\n'}
+[0.809902] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml\n'}
+[0.818922] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/conveyor/model.config\n'}
+[0.819134] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur18/default_kinematics.yaml\n'}
+[0.828076] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/conveyor/model.sdf\n'}
+[0.828449] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur18/joint_limits.yaml\n'}
+[0.838405] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur18/physical_parameters.yaml\n'}
+[0.838653] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/models/cube/model.sdf\n'}
+[0.848167] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur18/visual_parameters.yaml\n'}
+[0.848437] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/peg_pick_insert_demo.py\n'}
+[0.857664] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml\n'}
+[0.857970] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/conveyor_pick_place_script.py\n'}
+[0.867698] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/lib/ur3e_robotiq_gz_sim/cube_conveyor_node.py\n'}
+[0.868234] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml\n'}
+[0.877526] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/package_run_dependencies/ur3e_robotiq_gz_sim\n'}
+[0.877744] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml\n'}
+[0.887277] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/parent_prefix_path/ur3e_robotiq_gz_sim\n'}
+[0.887475] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml\n'}
+[0.897174] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml\n'}
+[0.897341] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/ament_prefix_path.sh\n'}
+[0.900994] (-) TimerEvent: {}
+[0.906681] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml\n'}
+[0.906989] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/ament_prefix_path.dsv\n'}
+[0.916508] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml\n'}
+[0.916772] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/path.sh\n'}
+[0.926396] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml\n'}
+[0.926651] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/environment/path.dsv\n'}
+[0.937004] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml\n'}
+[0.937389] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.bash\n'}
+[0.946676] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml\n'}
+[0.946913] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.sh\n'}
+[0.956197] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml\n'}
+[0.956433] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.zsh\n'}
+[0.965378] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml\n'}
+[0.966040] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/local_setup.dsv\n'}
+[0.974801] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml\n'}
+[0.975241] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/package.dsv\n'}
+[0.984512] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml\n'}
+[0.985059] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ament_index/resource_index/packages/ur3e_robotiq_gz_sim\n'}
+[0.993982] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml\n'}
+[0.994487] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/cmake/ur3e_robotiq_gz_simConfig.cmake\n'}
+[1.001111] (-) TimerEvent: {}
+[1.003802] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml\n'}
+[1.004009] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/cmake/ur3e_robotiq_gz_simConfig-version.cmake\n'}
+[1.014206] (ur3e_robotiq_gz_sim) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur3e_robotiq_gz_sim/share/ur3e_robotiq_gz_sim/package.xml\n'}
+[1.014443] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml\n'}
+[1.024408] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml\n'}
+[1.024941] (realsense2_ros_mqtt_bridge) JobEnded: {'identifier': 'realsense2_ros_mqtt_bridge', 'rc': 'SIGINT'}
+[1.026095] (ur3e_robotiq_gz_sim) JobEnded: {'identifier': 'ur3e_robotiq_gz_sim', 'rc': 'SIGINT'}
+[1.033479] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml\n'}
+[1.035347] (yolo_realsense) JobEnded: {'identifier': 'yolo_realsense', 'rc': 'SIGINT'}
+[1.042395] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml\n'}
+[1.050536] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml\n'}
+[1.058102] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml\n'}
+[1.065574] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml\n'}
+[1.073125] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml\n'}
+[1.080542] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml\n'}
+[1.087844] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml\n'}
+[1.094996] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml\n'}
+[1.101200] (-) TimerEvent: {}
+[1.102319] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml\n'}
+[1.109857] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur8long/default_kinematics.yaml\n'}
+[1.117513] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur8long/joint_limits.yaml\n'}
+[1.125837] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur8long/physical_parameters.yaml\n'}
+[1.133838] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/config/ur8long/visual_parameters.yaml\n'}
+[1.142895] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/launch/view_ur.launch.py\n'}
+[1.152298] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl\n'}
+[1.160321] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl\n'}
+[1.167975] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl\n'}
+[1.177181] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl\n'}
+[1.185175] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl\n'}
+[1.193134] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl\n'}
+[1.200545] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl\n'}
+[1.201258] (-) TimerEvent: {}
+[1.208167] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae\n'}
+[1.215665] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae\n'}
+[1.223019] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae\n'}
+[1.230188] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae\n'}
+[1.238169] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae\n'}
+[1.245897] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae\n'}
+[1.253167] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae\n'}
+[1.260799] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl\n'}
+[1.268436] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl\n'}
+[1.276556] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl\n'}
+[1.284909] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl\n'}
+[1.292858] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl\n'}
+[1.300523] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl\n'}
+[1.301343] (-) TimerEvent: {}
+[1.307924] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl\n'}
+[1.315634] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae\n'}
+[1.323042] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae\n'}
+[1.330483] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae\n'}
+[1.338188] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae\n'}
+[1.345639] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae\n'}
+[1.353335] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae\n'}
+[1.360857] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae\n'}
+[1.368085] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/LICENSE.txt\n'}
+[1.375554] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/base.stl\n'}
+[1.382976] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/forearm.stl\n'}
+[1.390849] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/shoulder.stl\n'}
+[1.398617] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/upperarm.stl\n'}
+[1.401445] (-) TimerEvent: {}
+[1.406324] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist1.stl\n'}
+[1.413716] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist2.stl\n'}
+[1.421483] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist3.stl\n'}
+[1.429006] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/UR15_DIFF_8bit_2K.jpg\n'}
+[1.436730] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/base.dae\n'}
+[1.444546] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/forearm.dae\n'}
+[1.451911] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/shoulder.dae\n'}
+[1.458962] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/upperarm.dae\n'}
+[1.466184] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist1.dae\n'}
+[1.473323] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist2.dae\n'}
+[1.480975] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist3.dae\n'}
+[1.488753] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl\n'}
+[1.496425] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl\n'}
+[1.501523] (-) TimerEvent: {}
+[1.504486] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae\n'}
+[1.512390] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae\n'}
+[1.520622] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/LICENSE.txt\n'}
+[1.528313] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/collision/forearm.stl\n'}
+[1.536512] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/collision/upperarm.stl\n'}
+[1.544548] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/visual/UR18_DIFF_8bit_2K.jpg\n'}
+[1.552280] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/visual/forearm.dae\n'}
+[1.559974] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur18/visual/upperarm.dae\n'}
+[1.567258] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt\n'}
+[1.574233] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl\n'}
+[1.581190] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl\n'}
+[1.588103] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl\n'}
+[1.595498] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl\n'}
+[1.601615] (-) TimerEvent: {}
+[1.602794] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl\n'}
+[1.610350] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl\n'}
+[1.618056] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl\n'}
+[1.626028] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png\n'}
+[1.633955] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae\n'}
+[1.642024] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae\n'}
+[1.650191] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae\n'}
+[1.658918] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae\n'}
+[1.670298] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae\n'}
+[1.683608] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae\n'}
+[1.696871] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae\n'}
+[1.704045] (-) TimerEvent: {}
+[1.708857] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl\n'}
+[1.721378] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl\n'}
+[1.733907] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl\n'}
+[1.745849] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl\n'}
+[1.757013] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl\n'}
+[1.770171] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl\n'}
+[1.782231] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl\n'}
+[1.786559] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[1.791460] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae\n'}
+[1.798381] (realsense2_camera_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.798649] (realsense2_camera_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.798756] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.800302] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae\n'}
+[1.804113] (-) TimerEvent: {}
+[1.813777] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.c.o\x1b[0m\n'}
+[1.814061] (realsense2_camera_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c.o\x1b[0m\n'}
+[1.814263] (realsense2_camera_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[1.814371] (realsense2_camera_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rgbd__functions.c.o\x1b[0m\n'}
+[1.814525] (realsense2_camera_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.c.o\x1b[0m\n'}
+[1.814683] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__functions.c.o\x1b[0m\n'}
+[1.814774] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__functions.c.o\x1b[0m\n'}
+[1.814866] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae\n'}
+[1.815351] (realsense2_camera_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__functions.c.o\x1b[0m\n'}
+[1.815762] (realsense2_camera_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__functions.c.o\x1b[0m\n'}
+[1.816697] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__functions.c.o\x1b[0m\n'}
+[1.817689] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__functions.c.o\x1b[0m\n'}
+[1.819637] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__functions.c.o\x1b[0m\n'}
+[1.827139] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae\n'}
+[1.831014] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__functions.c.o\x1b[0m\n'}
+[1.843162] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae\n'}
+[1.865173] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae\n'}
+[1.904083] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae\n'}
+[1.904436] (-) TimerEvent: {}
+[1.913505] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__functions.c.o\x1b[0m\n'}
+[1.937302] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt\n'}
+[1.937555] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/action/detail/triggered_calibration__functions.c.o\x1b[0m\n'}
+[1.956467] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl\n'}
+[1.970246] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl\n'}
+[1.982479] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png\n'}
+[1.994353] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae\n'}
+[2.004574] (-) TimerEvent: {}
+[2.005851] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae\n'}
+[2.017500] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl\n'}
+[2.029418] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl\n'}
+[2.041044] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl\n'}
+[2.052122] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl\n'}
+[2.062774] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl\n'}
+[2.073326] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl\n'}
+[2.083572] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl\n'}
+[2.093381] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae\n'}
+[2.103221] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae\n'}
+[2.104642] (-) TimerEvent: {}
+[2.114005] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae\n'}
+[2.124542] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae\n'}
+[2.134943] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae\n'}
+[2.145929] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae\n'}
+[2.155627] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.156217] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae\n'}
+[2.166591] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl\n'}
+[2.176583] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl\n'}
+[2.186222] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl\n'}
+[2.196101] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl\n'}
+[2.204759] (-) TimerEvent: {}
+[2.205684] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl\n'}
+[2.209487] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[2.215007] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl\n'}
+[2.221954] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.222235] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.222371] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.224385] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl\n'}
+[2.234190] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae\n'}
+[2.244435] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae\n'}
+[2.254632] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae\n'}
+[2.265388] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae\n'}
+[2.276552] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae\n'}
+[2.288203] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae\n'}
+[2.299729] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae\n'}
+[2.304888] (-) TimerEvent: {}
+[2.312286] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl\n'}
+[2.324286] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl\n'}
+[2.336208] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl\n'}
+[2.348458] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl\n'}
+[2.360408] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl\n'}
+[2.372152] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl\n'}
+[2.383448] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl\n'}
+[2.395215] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae\n'}
+[2.405010] (-) TimerEvent: {}
+[2.406652] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae\n'}
+[2.418045] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae\n'}
+[2.429669] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae\n'}
+[2.441648] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae\n'}
+[2.453006] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae\n'}
+[2.464171] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae\n'}
+[2.475560] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/LICENSE.txt\n'}
+[2.487154] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/collision/forearm.stl\n'}
+[2.498438] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/collision/upperarm.stl\n'}
+[2.505117] (-) TimerEvent: {}
+[2.510099] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/UR8Long_DIFF_8bit_2K.jpg\n'}
+[2.521375] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/forearm.dae\n'}
+[2.532960] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/upperarm.dae\n'}
+[2.545119] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/rviz/view_robot.rviz\n'}
+[2.556836] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro\n'}
+[2.567755] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/inc/ur_joint_control.xacro\n'}
+[2.579323] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/inc/ur_sensors.xacro\n'}
+[2.590786] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro\n'}
+[2.602252] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/ros2_control_mock_hardware.xacro\n'}
+[2.605221] (-) TimerEvent: {}
+[2.613766] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/ur.urdf.xacro\n'}
+[2.625307] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/ur_macro.xacro\n'}
+[2.636295] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/urdf/ur_mocked.urdf.xacro\n'}
+[2.649002] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py\n'}
+[2.660748] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/test/test_view_ur_launch.py\n'}
+[2.672509] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description\n'}
+[2.684361] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description\n'}
+[2.696697] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.sh\n'}
+[2.705339] (-) TimerEvent: {}
+[2.709122] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv\n'}
+[2.721231] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/environment/path.sh\n'}
+[2.732976] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/environment/path.dsv\n'}
+[2.745164] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/local_setup.bash\n'}
+[2.757033] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/local_setup.sh\n'}
+[2.768493] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/local_setup.zsh\n'}
+[2.779904] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/local_setup.dsv\n'}
+[2.791434] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/package.dsv\n'}
+[2.803103] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ament_index/resource_index/packages/ur_description\n'}
+[2.805417] (-) TimerEvent: {}
+[2.814794] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake\n'}
+[2.826183] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake\n'}
+[2.837627] (ur_description) StdoutLine: {'line': b'-- Symlinking: /ros_ws/install/ur_description/share/ur_description/package.xml\n'}
+[2.851070] (ur_description) JobEnded: {'identifier': 'ur_description', 'rc': 'SIGINT'}
+[2.905540] (-) TimerEvent: {}
+[3.005887] (-) TimerEvent: {}
+[3.049122] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[3.049534] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[3.049670] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[3.049786] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[3.049897] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/safety_preset_read__type_support.cpp.o\x1b[0m\n'}
+[3.050024] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/calib_config_read__type_support.cpp.o\x1b[0m\n'}
+[3.050355] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/safety_interface_config_write__type_support.cpp.o\x1b[0m\n'}
+[3.050504] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[3.051917] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/calib_config_write__type_support.cpp.o\x1b[0m\n'}
+[3.052255] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/safety_preset_write__type_support.cpp.o\x1b[0m\n'}
+[3.052411] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/safety_interface_config_read__type_support.cpp.o\x1b[0m\n'}
+[3.107067] (-) TimerEvent: {}
+[3.207533] (-) TimerEvent: {}
+[3.308183] (-) TimerEvent: {}
+[3.412289] (-) TimerEvent: {}
+[3.512913] (-) TimerEvent: {}
+[3.613473] (-) TimerEvent: {}
+[3.714021] (-) TimerEvent: {}
+[3.756062] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/application_config_read__type_support.cpp.o\x1b[0m\n'}
+[3.759488] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/hardware_monitor_command_send__type_support.cpp.o\x1b[0m\n'}
+[3.759809] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/application_config_write__type_support.cpp.o\x1b[0m\n'}
+[3.792215] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/action/triggered_calibration__type_support.cpp.o\x1b[0m\n'}
+[3.815069] (-) TimerEvent: {}
+[3.895847] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[3.896211] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[3.896370] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[3.896517] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[3.896649] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[3.903787] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/safety_preset_read__type_support.cpp.o\x1b[0m\n'}
+[3.905074] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/safety_preset_write__type_support.cpp.o\x1b[0m\n'}
+[3.908992] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o\x1b[0m\n'}
+[3.915190] (-) TimerEvent: {}
+[3.935206] (robotiq_controllers) StderrLine: {'line': b'\x1b[01m\x1b[K/ros_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool robotiq_controllers::RobotiqActivationController::reactivateGripper(std_srvs::srv::Trigger_Request_<std::allocator<void> >::SharedPtr, std_srvs::srv::Trigger_Response_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.935573] (robotiq_controllers) StderrLine: {'line': b'\x1b[01m\x1b[K/ros_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp:108:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvoid value not ignored as it ought to be\n'}
+[3.935737] (robotiq_controllers) StderrLine: {'line': b'  108 |   resp->success = \x1b[01;31m\x1b[Kcommand_interfaces_[REACTIVATE_GRIPPER_RESPONSE].set_value(ASYNC_WAITING)\x1b[m\x1b[K;\n'}
+[3.935878] (robotiq_controllers) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.936031] (robotiq_controllers) StderrLine: {'line': b'\x1b[01m\x1b[K/ros_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp:109:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvoid value not ignored as it ought to be\n'}
+[3.936170] (robotiq_controllers) StderrLine: {'line': b'  109 |   resp->success &= \x1b[01;31m\x1b[Kcommand_interfaces_[REACTIVATE_GRIPPER_CMD].set_value(1.0)\x1b[m\x1b[K;\n'}
+[3.936311] (robotiq_controllers) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.936438] (robotiq_controllers) StderrLine: {'line': b'\x1b[01m\x1b[K/ros_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp:113:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<hardware_interface::LoanedCommandInterface>, hardware_interface::LoanedCommandInterface>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass hardware_interface::LoanedCommandInterface\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_optional\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.936577] (robotiq_controllers) StderrLine: {'line': b'  113 |     const auto maybe_value = command_interfaces_[REACTIVATE_GRIPPER_RESPONSE].\x1b[01;31m\x1b[Kget_optional\x1b[m\x1b[K();\n'}
+[3.936710] (robotiq_controllers) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.936841] (robotiq_controllers) StderrLine: {'line': b'\x1b[01m\x1b[K/ros_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp:122:87:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<hardware_interface::LoanedCommandInterface>, hardware_interface::LoanedCommandInterface>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass hardware_interface::LoanedCommandInterface\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_optional\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.936982] (robotiq_controllers) StderrLine: {'line': b'  122 |   resp->success &= static_cast<bool>(command_interfaces_[REACTIVATE_GRIPPER_RESPONSE].\x1b[01;31m\x1b[Kget_optional\x1b[m\x1b[K().value_or(false));\n'}
+[3.937115] (robotiq_controllers) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.975780] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp.o\x1b[0m\n'}
+[3.976158] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[3.986914] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.cpp.o\x1b[0m\n'}
+[3.987445] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[3.987590] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[3.987722] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/safety_interface_config_read__type_support.cpp.o\x1b[0m\n'}
+[3.987851] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.cpp.o\x1b[0m\n'}
+[3.988003] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.cpp.o\x1b[0m\n'}
+[4.019067] (-) TimerEvent: {}
+[4.068117] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/safety_interface_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.119195] (-) TimerEvent: {}
+[4.147807] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/calib_config_read__type_support.cpp.o\x1b[0m\n'}
+[4.219327] (-) TimerEvent: {}
+[4.255304] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/calib_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.319471] (-) TimerEvent: {}
+[4.392460] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/application_config_read__type_support.cpp.o\x1b[0m\n'}
+[4.423019] (-) TimerEvent: {}
+[4.481688] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/application_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.485333] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.491930] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/hardware_monitor_command_send__type_support.cpp.o\x1b[0m\n'}
+[4.523147] (-) TimerEvent: {}
+[4.554940] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/action/triggered_calibration__type_support.cpp.o\x1b[0m\n'}
+[4.558854] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.cpp.o\x1b[0m\n'}
+[4.576053] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.623280] (-) TimerEvent: {}
+[4.723770] (-) TimerEvent: {}
+[4.789995] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.823901] (-) TimerEvent: {}
+[4.924666] (-) TimerEvent: {}
+[4.942453] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/application_config_read__type_support.cpp.o\x1b[0m\n'}
+[4.954958] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[4.976396] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/application_config_write__type_support.cpp.o\x1b[0m\n'}
+[4.982039] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.cpp.o\x1b[0m\n'}
+[4.982478] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.cpp.o\x1b[0m\n'}
+[4.982816] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o\x1b[0m\n'}
+[5.024816] (-) TimerEvent: {}
+[5.027649] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[5.034976] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[5.042078] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o\x1b[0m\n'}
+[5.057742] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/device_info__type_support.cpp.o\x1b[0m\n'}
+[5.098360] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.128101] (-) TimerEvent: {}
+[5.165043] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/safety_preset_read__type_support.cpp.o\x1b[0m\n'}
+[5.210459] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 54%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[5.225893] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/safety_preset_write__type_support.cpp.o\x1b[0m\n'}
+[5.228203] (-) TimerEvent: {}
+[5.328705] (-) TimerEvent: {}
+[5.429338] (-) TimerEvent: {}
+[5.432743] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/imu_info__type_support.c.o\x1b[0m\n'}
+[5.513405] (robotiq_controllers) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robotiq_controllers.dir/build.make:76: CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o] Error 1\n'}
+[5.513828] (robotiq_controllers) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robotiq_controllers.dir/all] Error 2\n'}
+[5.514156] (robotiq_controllers) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.522823] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c.o\x1b[0m\n'}
+[5.523194] (robotiq_controllers) JobEnded: {'identifier': 'robotiq_controllers', 'rc': 'SIGINT'}
+[5.529469] (-) TimerEvent: {}
+[5.537227] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/metadata__type_support.c.o\x1b[0m\n'}
+[5.549065] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/safety_interface_config_read__type_support.cpp.o\x1b[0m\n'}
+[5.593441] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/rgbd__type_support.c.o\x1b[0m\n'}
+[5.622059] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/safety_interface_config_write__type_support.cpp.o\x1b[0m\n'}
+[5.623211] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/calib_config_read__type_support.cpp.o\x1b[0m\n'}
+[5.629584] (-) TimerEvent: {}
+[5.654211] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o\x1b[0m\n'}
+[5.729744] (-) TimerEvent: {}
+[5.745221] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/device_info__type_support.c.o\x1b[0m\n'}
+[5.829881] (-) TimerEvent: {}
+[5.847846] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.c.o\x1b[0m\n'}
+[5.930032] (-) TimerEvent: {}
+[5.943626] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.c.o\x1b[0m\n'}
+[5.989503] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.c.o\x1b[0m\n'}
+[6.030176] (-) TimerEvent: {}
+[6.046097] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/calib_config_write__type_support.cpp.o\x1b[0m\n'}
+[6.046576] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[6.046768] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/application_config_read__type_support.cpp.o\x1b[0m\n'}
+[6.082023] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.c.o\x1b[0m\n'}
+[6.087463] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/application_config_write__type_support.cpp.o\x1b[0m\n'}
+[6.096422] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/hardware_monitor_command_send__type_support.cpp.o\x1b[0m\n'}
+[6.107218] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.c.o\x1b[0m\n'}
+[6.130354] (-) TimerEvent: {}
+[6.143662] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[6.178063] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o\x1b[0m\n'}
+[6.201169] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.c.o\x1b[0m\n'}
+[6.230493] (-) TimerEvent: {}
+[6.238088] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/application_config_read__type_support.c.o\x1b[0m\n'}
+[6.254447] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/application_config_write__type_support.c.o\x1b[0m\n'}
+[6.272071] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[6.296399] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support_c.cpp.o\x1b[0m\n'}
+[6.330644] (-) TimerEvent: {}
+[6.336415] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support_c.cpp.o\x1b[0m\n'}
+[6.350281] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.c.o\x1b[0m\n'}
+[6.434087] (-) TimerEvent: {}
+[6.458942] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.c.o\x1b[0m\n'}
+[6.487210] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.523218] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/action/detail/dds_fastrtps/triggered_calibration__type_support.cpp.o\x1b[0m\n'}
+[6.534234] (-) TimerEvent: {}
+[6.580182] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.617888] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support_c.cpp.o\x1b[0m\n'}
+[6.634395] (-) TimerEvent: {}
+[6.640719] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support_c.cpp.o\x1b[0m\n'}
+[6.674902] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/calib_config_read__type_support_c.cpp.o\x1b[0m\n'}
+[6.675296] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[6.676405] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[6.696056] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/calib_config_write__type_support_c.cpp.o\x1b[0m\n'}
+[6.696708] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/application_config_read__type_support_c.cpp.o\x1b[0m\n'}
+[6.734535] (-) TimerEvent: {}
+[6.837103] (-) TimerEvent: {}
+[6.915196] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/application_config_write__type_support_c.cpp.o\x1b[0m\n'}
+[6.937261] (-) TimerEvent: {}
+[7.015905] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support_c.cpp.o\x1b[0m\n'}
+[7.041093] (-) TimerEvent: {}
+[7.089098] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/action/detail/triggered_calibration__type_support_c.cpp.o\x1b[0m\n'}
+[7.141243] (-) TimerEvent: {}
+[7.241764] (-) TimerEvent: {}
+[7.342244] (-) TimerEvent: {}
+[7.442748] (-) TimerEvent: {}
+[7.543201] (-) TimerEvent: {}
+[7.570392] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.604372] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.639007] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 84%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.643274] (-) TimerEvent: {}
+[7.672138] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 84%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.690973] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 84%] Built target realsense2_camera_msgs\n'}
+[7.707468] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.743345] (-) TimerEvent: {}
+[7.843585] (-) TimerEvent: {}
+[7.943863] (-) TimerEvent: {}
+[8.044154] (-) TimerEvent: {}
+[8.144424] (-) TimerEvent: {}
+[8.244709] (-) TimerEvent: {}
+[8.345028] (-) TimerEvent: {}
+[8.445325] (-) TimerEvent: {}
+[8.545569] (-) TimerEvent: {}
+[8.645857] (-) TimerEvent: {}
+[8.746183] (-) TimerEvent: {}
+[8.846442] (-) TimerEvent: {}
+[8.946672] (-) TimerEvent: {}
+[9.046951] (-) TimerEvent: {}
+[9.147273] (-) TimerEvent: {}
+[9.247584] (-) TimerEvent: {}
+[9.347886] (-) TimerEvent: {}
+[9.448235] (-) TimerEvent: {}
+[9.548532] (-) TimerEvent: {}
+[9.648795] (-) TimerEvent: {}
+[9.749065] (-) TimerEvent: {}
+[9.849369] (-) TimerEvent: {}
+[9.949639] (-) TimerEvent: {}
+[10.049902] (-) TimerEvent: {}
+[10.100808] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] Built target realsense2_camera_msgs__py\n'}
+[10.117626] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o\x1b[0m\n'}
+[10.117944] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o\x1b[0m\n'}
+[10.118055] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[10.118126] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[10.118190] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_rgbd_s.c.o\x1b[0m\n'}
+[10.118261] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_safety_preset_write_s.c.o\x1b[0m\n'}
+[10.118322] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_safety_preset_read_s.c.o\x1b[0m\n'}
+[10.118584] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_safety_interface_config_read_s.c.o\x1b[0m\n'}
+[10.118718] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_safety_interface_config_write_s.c.o\x1b[0m\n'}
+[10.118799] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_calib_config_read_s.c.o\x1b[0m\n'}
+[10.118927] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_calib_config_write_s.c.o\x1b[0m\n'}
+[10.119180] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_application_config_read_s.c.o\x1b[0m\n'}
+[10.119300] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_hardware_monitor_command_send_s.c.o\x1b[0m\n'}
+[10.119382] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_application_config_write_s.c.o\x1b[0m\n'}
+[10.119438] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/action/_triggered_calibration_s.c.o\x1b[0m\n'}
+[10.150040] (-) TimerEvent: {}
+[10.250492] (-) TimerEvent: {}
+[10.350992] (-) TimerEvent: {}
+[10.392128] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[10.435358] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[10.447308] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.447484] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.447531] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.451083] (-) TimerEvent: {}
+[10.551315] (-) TimerEvent: {}
+[10.617824] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.617996] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.618061] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.651458] (-) TimerEvent: {}
+[10.652805] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[10.652930] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.652981] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[10.661033] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 'SIGINT'}
+[10.671617] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[10.671723] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[10.671751] (realsense2_rviz_plugin) JobSkipped: {'identifier': 'realsense2_rviz_plugin'}
+[10.671772] (robotiq_hardware_tests) JobSkipped: {'identifier': 'robotiq_hardware_tests'}
+[10.671791] (ros2_cppserial) JobSkipped: {'identifier': 'ros2_cppserial'}
+[10.671812] (-) EventReactorShutdown: {}

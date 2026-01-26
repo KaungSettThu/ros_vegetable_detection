@@ -265,12 +265,33 @@ CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosi
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__type_support.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__struct.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__functions.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__struct.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__functions.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__struct.h \
   rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__functions.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__struct.h \
+  rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__functions.h \
   rosidl_generator_c/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.h \
   rosidl_generator_c/realsense2_camera_msgs/action/detail/triggered_calibration__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -279,9 +300,37 @@ CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosi
 
 rosidl_generator_c/realsense2_camera_msgs/action/detail/triggered_calibration__struct.h:
 
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__struct.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__functions.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__type_support.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__struct.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__type_support.h:
+
 rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__functions.h:
 
 rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_write__struct.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__functions.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__struct.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__functions.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__functions.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__functions.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__struct.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.h:
 
 rosidl_generator_c/realsense2_camera_msgs/msg/detail/rgbd__functions.h:
 
@@ -304,6 +353,8 @@ rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__type_sup
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__functions.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
@@ -342,6 +393,8 @@ rosidl_generator_c/realsense2_camera_msgs/srv/detail/calib_config_read__type_sup
 /usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_preset_write__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -533,6 +586,8 @@ rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__struct.h:
 
 /usr/include/python3.10/namespaceobject.h:
 
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_write__struct.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -550,6 +605,8 @@ rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_t
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.h:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -586,6 +643,8 @@ rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_t
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.h:
 
 /usr/include/time.h:
 
@@ -649,6 +708,8 @@ rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.h:
 
 /usr/include/python3.10/cpython/bytearrayobject.h:
 
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/safety_interface_config_read__struct.h:
+
 /usr/include/python3.10/cpython/pystate.h:
 
 rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__struct.h:
@@ -666,6 +727,8 @@ rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__struct.h:
 /usr/include/python3.10/unicodeobject.h:
 
 rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h:
+
+rosidl_generator_c/realsense2_camera_msgs/srv/detail/application_config_read__functions.h:
 
 /usr/include/ctype.h:
 

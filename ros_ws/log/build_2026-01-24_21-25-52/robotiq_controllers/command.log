@@ -1,0 +1,1 @@
+Invoking command in '/ros_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros_ws/src/ros2_robotiq_gripper/robotiq_controllers -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_ws/install/robotiq_controllers

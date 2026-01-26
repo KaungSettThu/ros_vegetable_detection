@@ -1,2 +1,0 @@
-Invoking command in '/ros_ws/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros_ws/src/realsense_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/ros_ws/install/realsense_gazebo_plugin
-Invoked command in '/ros_ws/build/realsense_gazebo_plugin' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros_ws/src/realsense_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/ros_ws/install/realsense_gazebo_plugin
