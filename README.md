@@ -2,7 +2,7 @@
 
 This project demonstrates vegetable detection using YOLOv8 and depth perception with Intel RealSense camera.
 
-## Setup
+## Testing of YOLO model (WITHOUT ROS)
 
 ### 1. Create a conda environment
 ```bash
@@ -53,3 +53,53 @@ This script will detect vegetables, compute their 3D coordinates, and optionally
 - Use `.gitignore` to ignore sensitive files like `.ssh` and prediction folders in `runs/predict*`.
 - The 3D coordinates from the point cloud can be used for robot picking.
 - Width and height of detected objects may be used for planning robot grip.
+
+## Testing of Camera ROS Node
+
+### 1. Install a docker container
+
+Go to the docker folder. In the terminal, run the command
+```bash
+sudo ./build_docker.sh
+```
+
+### 2. Run / Enter the docker container
+If the docker container has not been run before, run the docker by the use of the command
+```bash
+sudo ./run_docker.sh
+```
+
+If the docker container has been run, enter the docker by the use of the command
+```bash
+sudo ./into_docker.sh
+```
+
+### 3. Build the project
+
+Go to the ros_ws
+```bash
+cd ros_ws
+```
+
+Build the ros workspace
+```bash
+colcon build
+```
+
+### 4. Run the ros node
+```bash
+ros2 run yolo_realsense yolo_node
+```
+
+### 5. Debugging
+The topics that are published can be checked by running the command
+```bash
+ros_2 topic list
+```
+
+The published information by the topic can be checked by
+```bash
+ros_2 topic echo <<insert topic name here>>
+```
+
+

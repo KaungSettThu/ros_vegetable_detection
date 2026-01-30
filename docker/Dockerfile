@@ -44,7 +44,8 @@ RUN pip3 install --no-cache-dir \
     ultralytics \
     numpy \
     open3d \
-    opencv-python
+    opencv-python \
+    pyrealsense2
 
 # ----------------------------
 # rosdep init
