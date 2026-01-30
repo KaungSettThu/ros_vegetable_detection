@@ -40,50 +40,55 @@ class YoloNode(Node):
 
         detections = self.detector.detect_objects(color, depth)
 
-        for det in detections:
-            pts = det['points_3d']
-            if pts.shape[0] == 0:
-                continue
+        if not detections:
+            return
 
-            # --- 3D centroid ---
-            centroid = np.mean(pts, axis=0)
+        # pick the first detected object
+        det = detections[0]
+        pts = det['points_3d']
+        if pts.shape[0] == 0:
+            return
 
-            # Publish class
-            class_msg = String()
-            class_msg.data = det['class']
-            self.class_pub.publish(class_msg)
 
-            # Publish position
-            pos_msg = PointStamped()
-            pos_msg.header.stamp = self.get_clock().now().to_msg()
-            pos_msg.header.frame_id = "camera_link"
-            pos_msg.point.x = float(centroid[0])
-            pos_msg.point.y = float(centroid[1])
-            pos_msg.point.z = float(centroid[2])
-            self.pos_pub.publish(pos_msg)
+        # --- 3D centroid ---
+        centroid = np.mean(pts, axis=0)
 
-            # Draw bbox for visualization
-            x1, y1, x2, y2 = det['bbox']
-            cv2.rectangle(color, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.putText(
-                color,
-                f"{det['class']} {centroid[2]:.2f}m",
-                (x1, y1 - 10),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
-                (0, 255, 0),
-                2
-            )
+        # Publish class
+        class_msg = String()
+        class_msg.data = det['class']
+        self.class_pub.publish(class_msg)
 
-            # Publish dimensions
-            dims = det['dimensions']
-            dim_msg = Vector3Stamped()
-            dim_msg.header.stamp = self.get_clock().now().to_msg()
-            dim_msg.header.frame_id = "camera_link"
-            dim_msg.vector.x = float(dims[0])
-            dim_msg.vector.y = float(dims[1])
-            dim_msg.vector.z = float(dims[2])
-            self.dim_pub.publish(dim_msg)
+        # Publish position
+        pos_msg = PointStamped()
+        pos_msg.header.stamp = self.get_clock().now().to_msg()
+        pos_msg.header.frame_id = "camera_link"
+        pos_msg.point.x = float(centroid[0])
+        pos_msg.point.y = float(centroid[1])
+        pos_msg.point.z = float(centroid[2])
+        self.pos_pub.publish(pos_msg)
+
+        # Draw bbox for visualization
+        x1, y1, x2, y2 = det['bbox']
+        cv2.rectangle(color, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.putText(
+            color,
+            f"{det['class']} {centroid[2]:.2f}m",
+            (x1, y1 - 10),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.6,
+            (0, 255, 0),
+            2
+        )
+
+        # Publish dimensions
+        dims = det['dimensions']
+        dim_msg = Vector3Stamped()
+        dim_msg.header.stamp = self.get_clock().now().to_msg()
+        dim_msg.header.frame_id = "camera_link"
+        dim_msg.vector.x = float(dims[0])
+        dim_msg.vector.y = float(dims[1])
+        dim_msg.vector.z = float(dims[2])
+        self.dim_pub.publish(dim_msg)
 
         # Publish annotated image
         img_msg = self.bridge.cv2_to_imgmsg(color, encoding='bgr8')

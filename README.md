@@ -86,6 +86,12 @@ Build the ros workspace
 colcon build
 ```
 
+### 4. Set source
+```bash
+source /opt/ros/humble/setup.bash
+source /ros_ws/install/setup.bash
+```
+
 ### 4. Run the ros node
 ```bash
 ros2 run yolo_realsense yolo_node
